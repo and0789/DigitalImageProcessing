@@ -1,0 +1,56 @@
+Video untuk Setup Environment Pengolahan Citra Digital.
+
+FIRST SETUP ENVIRONMENT
+https://youtu.be/Yl9ajdf5KoY
+
+Pastikan Tidak Bentrok dengan MinGW,
+
+
+
+Step by step
+
+pacman -S mingw-w64-ucrt-x86_64-toolchain mingw-w64-ucrt-x86_64-opencv mingw-w64-ucrt-x86_64-cmake mingw-w64-ucrt-x86_64-qt6-base
+
+
+C:\msys64\ucrt64\bin  --> Environment Variable
+
+
+Buat project
+Latihan1
+-- CMakeLists.txt
+-- main.cpp
+
+
+isi CMakeLists.txr
+cmake_minimum_required(VERSION 4.1)
+project(Latihan1)
+set(CMAKE_CXX_STANDARD 26)
+set(CMAKE_PREFIX_PATH "C:\\msys64\\ucrt64\\bin")
+find_package(OpenCV REQUIRED)
+include_directories(${OpenCV_INCLUDE_DIRS})
+add_executable(Latihan1 main.cpp)
+target_link_libraries(Latihan1 ${OpenCV_LIBS})
+
+
+isi main.cpp
+#include <iostream>
+#include <opencv2/opencv.hpp>
+int main() {
+    std::string imagePath = "test.png";
+    cv::Mat image = cv::imread(imagePath);
+    if (image.empty())
+    {
+        std::cerr << "Error" << std::endl;
+        return -1;
+    }
+    cv::imshow("Display", image);
+    cv::waitKey(0);
+    return 0;
+}
+
+
+cd Latihan1
+mkdir build
+cmake ..
+cmake --build .
+.\Latihan1.exe
