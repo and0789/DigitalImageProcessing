@@ -1,0 +1,9 @@
+Kasus 2: Deteksi "Blue Screen" (Chroma Key Sederhana)
+Skenario: Anda bekerja di stasiun TV cuaca. Presenter berdiri di depan layar biru. Tugas:
+1.	Ambil foto seseorang dengan latar belakang biru (atau warna solid lain).
+2.	Ambil foto pemandangan lain (misal: Menara Eiffel).
+3.	Buat program untuk mengganti latar belakang biru tersebut dengan foto Menara Eiffel. Clue Teknis:
+•	Gunakan HSV untuk mendeteksi warna biru.
+•	Buat Mask (biner) area biru.
+•	Lakukan Invert Mask untuk area orang.
+•	Gunakan operasi logika bitwise_and dan bitwise_add untuk menggabungkan orang dengan background baru.

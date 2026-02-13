@@ -1,0 +1,8 @@
+Kasus 1: Ganti Warna Objek (Color Replacement)
+Tantangan: Buat program untuk mendeteksi objek berwarna Biru, lalu ubah warnanya menjadi Hijau, tetapi pertahankan kecerahan aslinya.
+Algoritma (Hint untuk Mahasiswa):
+1.	Convert ke HSV.
+2.	Buat Mask untuk warna Biru (H: 100-130).
+3.	Pada piksel yang terdeteksi (Mask == 255), ubah nilai H (Hue) menjadi 60 (Hijau).
+4.	Jangan ubah nilai S dan V agar bayangan/tekstur tetap terlihat.
+5.	Convert balik dari HSV ke BGR untuk ditampilkan.

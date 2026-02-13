@@ -1,0 +1,33 @@
+TUGAS
+Kerjakan tugas berikut dan dokumentasikan dalam laporan praktikum:
+
+Tugas 1: Benchmark Lengkap
+•	Buat program yang membandingkan performa tiga metode: at<>(), ptr<>(), dan direct pointer access
+•	Gunakan citra berukuran berbeda (256×256, 512×512, 1024×1024)
+•	Buat tabel perbandingan waktu eksekusi
+•	Analisis: metode mana yang paling efisien dan mengapa?
+Tugas 2: Image Mosaic
+•	Buat program yang menggabungkan 4 citra menjadi satu mosaic 2×2
+•	Gunakan teknik ROI untuk menyusun citra
+•	Tambahkan border putih (5 pixel) di antara citra
+Tugas 3: Histogram Equalization Manual
+•	Implementasikan histogram equalization tanpa menggunakan fungsi OpenCV
+•	Gunakan metode ptr<>() untuk iterasi pixel
+•	Bandingkan hasil dengan equalizeHist() dari OpenCV
+•	Analisis perbedaan hasil (jika ada)
+Tugas 4: Memory Profiling
+•	Buat program yang menunjukkan penggunaan memory untuk:
+•	10 shallow copies
+•	10 deep copies
+•	Gunakan citra berukuran besar (misal 4K)
+•	Analisis: berapa kali lipat memory yang digunakan deep copy?
+
+PERTANYAAN
+1.	Jelaskan perbedaan antara sampling dan quantization dalam konteks citra digital!
+2.	Apa yang dimaksud dengan reference counting pada cv::Mat? Mengapa hal ini penting?
+3.	Kapan sebaiknya menggunakan shallow copy dan kapan menggunakan deep copy?
+4.	Jelaskan mengapa ptr<>() lebih cepat daripada at<>()! Apa trade-off yang harus dipertimbangkan?
+5.	Apa yang terjadi jika kita memodifikasi ROI? Apakah citra original ikut berubah? Mengapa?
+6.	Berikan contoh kasus nyata di mana Anda memerlukan akses pixel yang cepat (ptr<>()) vs akses yang aman (at<>())!
+7.	Apa perbedaan antara img.clone() dan img.copyTo(dst)? Kapan menggunakan masing-masing?
+8.	Jelaskan format type OpenCV seperti CV_8UC3, CV_16SC1, CV_32FC1! Apa arti masing-masing komponen?

@@ -1,0 +1,5 @@
+Kasus 4 : Sensor Privasi Otomatis (Privacy Protection)
+Skenario: Google Street View memburamkan wajah orang secara otomatis. Anda diminta membuat purwarupa sistem tersebut. Tugas:
+1.	Gunakan ruang warna YCrCb untuk mendeteksi area kulit (skin segmentasion).
+2.	Dapatkan area wajah (hasil segmentasi).
+3.	Berikan efek Blur (Gaussian Blur dengan kernel besar) hanya pada area yang terdeteksi sebagai kulit/wajah. Area background harus tetap tajam. Tujuan: Menggabungkan segmentasi warna dengan operasi filtering spasial.
