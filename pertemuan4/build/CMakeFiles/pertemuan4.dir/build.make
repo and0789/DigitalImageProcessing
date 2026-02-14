@@ -72,24 +72,38 @@ include CMakeFiles/pertemuan4.dir/flags.make
 CMakeFiles/pertemuan4.dir/codegen:
 .PHONY : CMakeFiles/pertemuan4.dir/codegen
 
-CMakeFiles/pertemuan4.dir/Src/arithmetic_operation.cpp.o: CMakeFiles/pertemuan4.dir/flags.make
-CMakeFiles/pertemuan4.dir/Src/arithmetic_operation.cpp.o: /Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/arithmetic_operation.cpp
-CMakeFiles/pertemuan4.dir/Src/arithmetic_operation.cpp.o: CMakeFiles/pertemuan4.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pertemuan4.dir/Src/arithmetic_operation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pertemuan4.dir/Src/arithmetic_operation.cpp.o -MF CMakeFiles/pertemuan4.dir/Src/arithmetic_operation.cpp.o.d -o CMakeFiles/pertemuan4.dir/Src/arithmetic_operation.cpp.o -c /Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/arithmetic_operation.cpp
+CMakeFiles/pertemuan4.dir/Src/arithmetic_operation_at.cpp.o: CMakeFiles/pertemuan4.dir/flags.make
+CMakeFiles/pertemuan4.dir/Src/arithmetic_operation_at.cpp.o: /Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/arithmetic_operation_at.cpp
+CMakeFiles/pertemuan4.dir/Src/arithmetic_operation_at.cpp.o: CMakeFiles/pertemuan4.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pertemuan4.dir/Src/arithmetic_operation_at.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pertemuan4.dir/Src/arithmetic_operation_at.cpp.o -MF CMakeFiles/pertemuan4.dir/Src/arithmetic_operation_at.cpp.o.d -o CMakeFiles/pertemuan4.dir/Src/arithmetic_operation_at.cpp.o -c /Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/arithmetic_operation_at.cpp
 
-CMakeFiles/pertemuan4.dir/Src/arithmetic_operation.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pertemuan4.dir/Src/arithmetic_operation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/arithmetic_operation.cpp > CMakeFiles/pertemuan4.dir/Src/arithmetic_operation.cpp.i
+CMakeFiles/pertemuan4.dir/Src/arithmetic_operation_at.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pertemuan4.dir/Src/arithmetic_operation_at.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/arithmetic_operation_at.cpp > CMakeFiles/pertemuan4.dir/Src/arithmetic_operation_at.cpp.i
 
-CMakeFiles/pertemuan4.dir/Src/arithmetic_operation.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pertemuan4.dir/Src/arithmetic_operation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/arithmetic_operation.cpp -o CMakeFiles/pertemuan4.dir/Src/arithmetic_operation.cpp.s
+CMakeFiles/pertemuan4.dir/Src/arithmetic_operation_at.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pertemuan4.dir/Src/arithmetic_operation_at.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/arithmetic_operation_at.cpp -o CMakeFiles/pertemuan4.dir/Src/arithmetic_operation_at.cpp.s
+
+CMakeFiles/pertemuan4.dir/Src/arithmetic_operation_ptr.cpp.o: CMakeFiles/pertemuan4.dir/flags.make
+CMakeFiles/pertemuan4.dir/Src/arithmetic_operation_ptr.cpp.o: /Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/arithmetic_operation_ptr.cpp
+CMakeFiles/pertemuan4.dir/Src/arithmetic_operation_ptr.cpp.o: CMakeFiles/pertemuan4.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/pertemuan4.dir/Src/arithmetic_operation_ptr.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pertemuan4.dir/Src/arithmetic_operation_ptr.cpp.o -MF CMakeFiles/pertemuan4.dir/Src/arithmetic_operation_ptr.cpp.o.d -o CMakeFiles/pertemuan4.dir/Src/arithmetic_operation_ptr.cpp.o -c /Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/arithmetic_operation_ptr.cpp
+
+CMakeFiles/pertemuan4.dir/Src/arithmetic_operation_ptr.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pertemuan4.dir/Src/arithmetic_operation_ptr.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/arithmetic_operation_ptr.cpp > CMakeFiles/pertemuan4.dir/Src/arithmetic_operation_ptr.cpp.i
+
+CMakeFiles/pertemuan4.dir/Src/arithmetic_operation_ptr.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pertemuan4.dir/Src/arithmetic_operation_ptr.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/arithmetic_operation_ptr.cpp -o CMakeFiles/pertemuan4.dir/Src/arithmetic_operation_ptr.cpp.s
 
 CMakeFiles/pertemuan4.dir/Src/geometric_operation.cpp.o: CMakeFiles/pertemuan4.dir/flags.make
 CMakeFiles/pertemuan4.dir/Src/geometric_operation.cpp.o: /Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/geometric_operation.cpp
 CMakeFiles/pertemuan4.dir/Src/geometric_operation.cpp.o: CMakeFiles/pertemuan4.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/pertemuan4.dir/Src/geometric_operation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/pertemuan4.dir/Src/geometric_operation.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pertemuan4.dir/Src/geometric_operation.cpp.o -MF CMakeFiles/pertemuan4.dir/Src/geometric_operation.cpp.o.d -o CMakeFiles/pertemuan4.dir/Src/geometric_operation.cpp.o -c /Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/geometric_operation.cpp
 
 CMakeFiles/pertemuan4.dir/Src/geometric_operation.cpp.i: cmake_force
@@ -103,7 +117,7 @@ CMakeFiles/pertemuan4.dir/Src/geometric_operation.cpp.s: cmake_force
 CMakeFiles/pertemuan4.dir/Src/logical_operation.cpp.o: CMakeFiles/pertemuan4.dir/flags.make
 CMakeFiles/pertemuan4.dir/Src/logical_operation.cpp.o: /Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/logical_operation.cpp
 CMakeFiles/pertemuan4.dir/Src/logical_operation.cpp.o: CMakeFiles/pertemuan4.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/pertemuan4.dir/Src/logical_operation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/pertemuan4.dir/Src/logical_operation.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pertemuan4.dir/Src/logical_operation.cpp.o -MF CMakeFiles/pertemuan4.dir/Src/logical_operation.cpp.o.d -o CMakeFiles/pertemuan4.dir/Src/logical_operation.cpp.o -c /Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/logical_operation.cpp
 
 CMakeFiles/pertemuan4.dir/Src/logical_operation.cpp.i: cmake_force
@@ -117,7 +131,7 @@ CMakeFiles/pertemuan4.dir/Src/logical_operation.cpp.s: cmake_force
 CMakeFiles/pertemuan4.dir/Src/main.cpp.o: CMakeFiles/pertemuan4.dir/flags.make
 CMakeFiles/pertemuan4.dir/Src/main.cpp.o: /Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/main.cpp
 CMakeFiles/pertemuan4.dir/Src/main.cpp.o: CMakeFiles/pertemuan4.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/pertemuan4.dir/Src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/pertemuan4.dir/Src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pertemuan4.dir/Src/main.cpp.o -MF CMakeFiles/pertemuan4.dir/Src/main.cpp.o.d -o CMakeFiles/pertemuan4.dir/Src/main.cpp.o -c /Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/main.cpp
 
 CMakeFiles/pertemuan4.dir/Src/main.cpp.i: cmake_force
@@ -128,36 +142,54 @@ CMakeFiles/pertemuan4.dir/Src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pertemuan4.dir/Src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/main.cpp -o CMakeFiles/pertemuan4.dir/Src/main.cpp.s
 
-CMakeFiles/pertemuan4.dir/Src/pixel_level_operation.cpp.o: CMakeFiles/pertemuan4.dir/flags.make
-CMakeFiles/pertemuan4.dir/Src/pixel_level_operation.cpp.o: /Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/pixel_level_operation.cpp
-CMakeFiles/pertemuan4.dir/Src/pixel_level_operation.cpp.o: CMakeFiles/pertemuan4.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/pertemuan4.dir/Src/pixel_level_operation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pertemuan4.dir/Src/pixel_level_operation.cpp.o -MF CMakeFiles/pertemuan4.dir/Src/pixel_level_operation.cpp.o.d -o CMakeFiles/pertemuan4.dir/Src/pixel_level_operation.cpp.o -c /Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/pixel_level_operation.cpp
+CMakeFiles/pertemuan4.dir/Src/pixel_level_operation_at.cpp.o: CMakeFiles/pertemuan4.dir/flags.make
+CMakeFiles/pertemuan4.dir/Src/pixel_level_operation_at.cpp.o: /Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/pixel_level_operation_at.cpp
+CMakeFiles/pertemuan4.dir/Src/pixel_level_operation_at.cpp.o: CMakeFiles/pertemuan4.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/pertemuan4.dir/Src/pixel_level_operation_at.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pertemuan4.dir/Src/pixel_level_operation_at.cpp.o -MF CMakeFiles/pertemuan4.dir/Src/pixel_level_operation_at.cpp.o.d -o CMakeFiles/pertemuan4.dir/Src/pixel_level_operation_at.cpp.o -c /Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/pixel_level_operation_at.cpp
 
-CMakeFiles/pertemuan4.dir/Src/pixel_level_operation.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pertemuan4.dir/Src/pixel_level_operation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/pixel_level_operation.cpp > CMakeFiles/pertemuan4.dir/Src/pixel_level_operation.cpp.i
+CMakeFiles/pertemuan4.dir/Src/pixel_level_operation_at.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pertemuan4.dir/Src/pixel_level_operation_at.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/pixel_level_operation_at.cpp > CMakeFiles/pertemuan4.dir/Src/pixel_level_operation_at.cpp.i
 
-CMakeFiles/pertemuan4.dir/Src/pixel_level_operation.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pertemuan4.dir/Src/pixel_level_operation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/pixel_level_operation.cpp -o CMakeFiles/pertemuan4.dir/Src/pixel_level_operation.cpp.s
+CMakeFiles/pertemuan4.dir/Src/pixel_level_operation_at.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pertemuan4.dir/Src/pixel_level_operation_at.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/pixel_level_operation_at.cpp -o CMakeFiles/pertemuan4.dir/Src/pixel_level_operation_at.cpp.s
+
+CMakeFiles/pertemuan4.dir/Src/pixel_level_operation_ptr.cpp.o: CMakeFiles/pertemuan4.dir/flags.make
+CMakeFiles/pertemuan4.dir/Src/pixel_level_operation_ptr.cpp.o: /Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/pixel_level_operation_ptr.cpp
+CMakeFiles/pertemuan4.dir/Src/pixel_level_operation_ptr.cpp.o: CMakeFiles/pertemuan4.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/pertemuan4.dir/Src/pixel_level_operation_ptr.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pertemuan4.dir/Src/pixel_level_operation_ptr.cpp.o -MF CMakeFiles/pertemuan4.dir/Src/pixel_level_operation_ptr.cpp.o.d -o CMakeFiles/pertemuan4.dir/Src/pixel_level_operation_ptr.cpp.o -c /Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/pixel_level_operation_ptr.cpp
+
+CMakeFiles/pertemuan4.dir/Src/pixel_level_operation_ptr.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pertemuan4.dir/Src/pixel_level_operation_ptr.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/pixel_level_operation_ptr.cpp > CMakeFiles/pertemuan4.dir/Src/pixel_level_operation_ptr.cpp.i
+
+CMakeFiles/pertemuan4.dir/Src/pixel_level_operation_ptr.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pertemuan4.dir/Src/pixel_level_operation_ptr.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/pixel_level_operation_ptr.cpp -o CMakeFiles/pertemuan4.dir/Src/pixel_level_operation_ptr.cpp.s
 
 # Object files for target pertemuan4
 pertemuan4_OBJECTS = \
-"CMakeFiles/pertemuan4.dir/Src/arithmetic_operation.cpp.o" \
+"CMakeFiles/pertemuan4.dir/Src/arithmetic_operation_at.cpp.o" \
+"CMakeFiles/pertemuan4.dir/Src/arithmetic_operation_ptr.cpp.o" \
 "CMakeFiles/pertemuan4.dir/Src/geometric_operation.cpp.o" \
 "CMakeFiles/pertemuan4.dir/Src/logical_operation.cpp.o" \
 "CMakeFiles/pertemuan4.dir/Src/main.cpp.o" \
-"CMakeFiles/pertemuan4.dir/Src/pixel_level_operation.cpp.o"
+"CMakeFiles/pertemuan4.dir/Src/pixel_level_operation_at.cpp.o" \
+"CMakeFiles/pertemuan4.dir/Src/pixel_level_operation_ptr.cpp.o"
 
 # External object files for target pertemuan4
 pertemuan4_EXTERNAL_OBJECTS =
 
-pertemuan4: CMakeFiles/pertemuan4.dir/Src/arithmetic_operation.cpp.o
+pertemuan4: CMakeFiles/pertemuan4.dir/Src/arithmetic_operation_at.cpp.o
+pertemuan4: CMakeFiles/pertemuan4.dir/Src/arithmetic_operation_ptr.cpp.o
 pertemuan4: CMakeFiles/pertemuan4.dir/Src/geometric_operation.cpp.o
 pertemuan4: CMakeFiles/pertemuan4.dir/Src/logical_operation.cpp.o
 pertemuan4: CMakeFiles/pertemuan4.dir/Src/main.cpp.o
-pertemuan4: CMakeFiles/pertemuan4.dir/Src/pixel_level_operation.cpp.o
+pertemuan4: CMakeFiles/pertemuan4.dir/Src/pixel_level_operation_at.cpp.o
+pertemuan4: CMakeFiles/pertemuan4.dir/Src/pixel_level_operation_ptr.cpp.o
 pertemuan4: CMakeFiles/pertemuan4.dir/build.make
 pertemuan4: /opt/homebrew/opt/opencv/lib/libopencv_gapi.4.13.0.dylib
 pertemuan4: /opt/homebrew/opt/opencv/lib/libopencv_stitching.4.13.0.dylib
@@ -216,7 +248,7 @@ pertemuan4: /opt/homebrew/opt/opencv/lib/libopencv_photo.4.13.0.dylib
 pertemuan4: /opt/homebrew/opt/opencv/lib/libopencv_imgproc.4.13.0.dylib
 pertemuan4: /opt/homebrew/opt/opencv/lib/libopencv_core.4.13.0.dylib
 pertemuan4: CMakeFiles/pertemuan4.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable pertemuan4"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable pertemuan4"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pertemuan4.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

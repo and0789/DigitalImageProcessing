@@ -137,29 +137,53 @@ pertemuan4/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pertemuan4.dir/build.make CMakeFiles/pertemuan4.dir/build
 .PHONY : pertemuan4/fast
 
-Src/arithmetic_operation.o: Src/arithmetic_operation.cpp.o
-.PHONY : Src/arithmetic_operation.o
+Src/arithmetic_operation_at.o: Src/arithmetic_operation_at.cpp.o
+.PHONY : Src/arithmetic_operation_at.o
 
 # target to build an object file
-Src/arithmetic_operation.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pertemuan4.dir/build.make CMakeFiles/pertemuan4.dir/Src/arithmetic_operation.cpp.o
-.PHONY : Src/arithmetic_operation.cpp.o
+Src/arithmetic_operation_at.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pertemuan4.dir/build.make CMakeFiles/pertemuan4.dir/Src/arithmetic_operation_at.cpp.o
+.PHONY : Src/arithmetic_operation_at.cpp.o
 
-Src/arithmetic_operation.i: Src/arithmetic_operation.cpp.i
-.PHONY : Src/arithmetic_operation.i
+Src/arithmetic_operation_at.i: Src/arithmetic_operation_at.cpp.i
+.PHONY : Src/arithmetic_operation_at.i
 
 # target to preprocess a source file
-Src/arithmetic_operation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pertemuan4.dir/build.make CMakeFiles/pertemuan4.dir/Src/arithmetic_operation.cpp.i
-.PHONY : Src/arithmetic_operation.cpp.i
+Src/arithmetic_operation_at.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pertemuan4.dir/build.make CMakeFiles/pertemuan4.dir/Src/arithmetic_operation_at.cpp.i
+.PHONY : Src/arithmetic_operation_at.cpp.i
 
-Src/arithmetic_operation.s: Src/arithmetic_operation.cpp.s
-.PHONY : Src/arithmetic_operation.s
+Src/arithmetic_operation_at.s: Src/arithmetic_operation_at.cpp.s
+.PHONY : Src/arithmetic_operation_at.s
 
 # target to generate assembly for a file
-Src/arithmetic_operation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pertemuan4.dir/build.make CMakeFiles/pertemuan4.dir/Src/arithmetic_operation.cpp.s
-.PHONY : Src/arithmetic_operation.cpp.s
+Src/arithmetic_operation_at.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pertemuan4.dir/build.make CMakeFiles/pertemuan4.dir/Src/arithmetic_operation_at.cpp.s
+.PHONY : Src/arithmetic_operation_at.cpp.s
+
+Src/arithmetic_operation_ptr.o: Src/arithmetic_operation_ptr.cpp.o
+.PHONY : Src/arithmetic_operation_ptr.o
+
+# target to build an object file
+Src/arithmetic_operation_ptr.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pertemuan4.dir/build.make CMakeFiles/pertemuan4.dir/Src/arithmetic_operation_ptr.cpp.o
+.PHONY : Src/arithmetic_operation_ptr.cpp.o
+
+Src/arithmetic_operation_ptr.i: Src/arithmetic_operation_ptr.cpp.i
+.PHONY : Src/arithmetic_operation_ptr.i
+
+# target to preprocess a source file
+Src/arithmetic_operation_ptr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pertemuan4.dir/build.make CMakeFiles/pertemuan4.dir/Src/arithmetic_operation_ptr.cpp.i
+.PHONY : Src/arithmetic_operation_ptr.cpp.i
+
+Src/arithmetic_operation_ptr.s: Src/arithmetic_operation_ptr.cpp.s
+.PHONY : Src/arithmetic_operation_ptr.s
+
+# target to generate assembly for a file
+Src/arithmetic_operation_ptr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pertemuan4.dir/build.make CMakeFiles/pertemuan4.dir/Src/arithmetic_operation_ptr.cpp.s
+.PHONY : Src/arithmetic_operation_ptr.cpp.s
 
 Src/geometric_operation.o: Src/geometric_operation.cpp.o
 .PHONY : Src/geometric_operation.o
@@ -233,29 +257,53 @@ Src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pertemuan4.dir/build.make CMakeFiles/pertemuan4.dir/Src/main.cpp.s
 .PHONY : Src/main.cpp.s
 
-Src/pixel_level_operation.o: Src/pixel_level_operation.cpp.o
-.PHONY : Src/pixel_level_operation.o
+Src/pixel_level_operation_at.o: Src/pixel_level_operation_at.cpp.o
+.PHONY : Src/pixel_level_operation_at.o
 
 # target to build an object file
-Src/pixel_level_operation.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pertemuan4.dir/build.make CMakeFiles/pertemuan4.dir/Src/pixel_level_operation.cpp.o
-.PHONY : Src/pixel_level_operation.cpp.o
+Src/pixel_level_operation_at.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pertemuan4.dir/build.make CMakeFiles/pertemuan4.dir/Src/pixel_level_operation_at.cpp.o
+.PHONY : Src/pixel_level_operation_at.cpp.o
 
-Src/pixel_level_operation.i: Src/pixel_level_operation.cpp.i
-.PHONY : Src/pixel_level_operation.i
+Src/pixel_level_operation_at.i: Src/pixel_level_operation_at.cpp.i
+.PHONY : Src/pixel_level_operation_at.i
 
 # target to preprocess a source file
-Src/pixel_level_operation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pertemuan4.dir/build.make CMakeFiles/pertemuan4.dir/Src/pixel_level_operation.cpp.i
-.PHONY : Src/pixel_level_operation.cpp.i
+Src/pixel_level_operation_at.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pertemuan4.dir/build.make CMakeFiles/pertemuan4.dir/Src/pixel_level_operation_at.cpp.i
+.PHONY : Src/pixel_level_operation_at.cpp.i
 
-Src/pixel_level_operation.s: Src/pixel_level_operation.cpp.s
-.PHONY : Src/pixel_level_operation.s
+Src/pixel_level_operation_at.s: Src/pixel_level_operation_at.cpp.s
+.PHONY : Src/pixel_level_operation_at.s
 
 # target to generate assembly for a file
-Src/pixel_level_operation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pertemuan4.dir/build.make CMakeFiles/pertemuan4.dir/Src/pixel_level_operation.cpp.s
-.PHONY : Src/pixel_level_operation.cpp.s
+Src/pixel_level_operation_at.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pertemuan4.dir/build.make CMakeFiles/pertemuan4.dir/Src/pixel_level_operation_at.cpp.s
+.PHONY : Src/pixel_level_operation_at.cpp.s
+
+Src/pixel_level_operation_ptr.o: Src/pixel_level_operation_ptr.cpp.o
+.PHONY : Src/pixel_level_operation_ptr.o
+
+# target to build an object file
+Src/pixel_level_operation_ptr.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pertemuan4.dir/build.make CMakeFiles/pertemuan4.dir/Src/pixel_level_operation_ptr.cpp.o
+.PHONY : Src/pixel_level_operation_ptr.cpp.o
+
+Src/pixel_level_operation_ptr.i: Src/pixel_level_operation_ptr.cpp.i
+.PHONY : Src/pixel_level_operation_ptr.i
+
+# target to preprocess a source file
+Src/pixel_level_operation_ptr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pertemuan4.dir/build.make CMakeFiles/pertemuan4.dir/Src/pixel_level_operation_ptr.cpp.i
+.PHONY : Src/pixel_level_operation_ptr.cpp.i
+
+Src/pixel_level_operation_ptr.s: Src/pixel_level_operation_ptr.cpp.s
+.PHONY : Src/pixel_level_operation_ptr.s
+
+# target to generate assembly for a file
+Src/pixel_level_operation_ptr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pertemuan4.dir/build.make CMakeFiles/pertemuan4.dir/Src/pixel_level_operation_ptr.cpp.s
+.PHONY : Src/pixel_level_operation_ptr.cpp.s
 
 # Help Target
 help:
@@ -267,9 +315,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... pertemuan4"
-	@echo "... Src/arithmetic_operation.o"
-	@echo "... Src/arithmetic_operation.i"
-	@echo "... Src/arithmetic_operation.s"
+	@echo "... Src/arithmetic_operation_at.o"
+	@echo "... Src/arithmetic_operation_at.i"
+	@echo "... Src/arithmetic_operation_at.s"
+	@echo "... Src/arithmetic_operation_ptr.o"
+	@echo "... Src/arithmetic_operation_ptr.i"
+	@echo "... Src/arithmetic_operation_ptr.s"
 	@echo "... Src/geometric_operation.o"
 	@echo "... Src/geometric_operation.i"
 	@echo "... Src/geometric_operation.s"
@@ -279,9 +330,12 @@ help:
 	@echo "... Src/main.o"
 	@echo "... Src/main.i"
 	@echo "... Src/main.s"
-	@echo "... Src/pixel_level_operation.o"
-	@echo "... Src/pixel_level_operation.i"
-	@echo "... Src/pixel_level_operation.s"
+	@echo "... Src/pixel_level_operation_at.o"
+	@echo "... Src/pixel_level_operation_at.i"
+	@echo "... Src/pixel_level_operation_at.s"
+	@echo "... Src/pixel_level_operation_ptr.o"
+	@echo "... Src/pixel_level_operation_ptr.i"
+	@echo "... Src/pixel_level_operation_ptr.s"
 .PHONY : help
 
 

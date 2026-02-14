@@ -8,11 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/arithmetic_operation.cpp" "CMakeFiles/pertemuan4.dir/Src/arithmetic_operation.cpp.o" "gcc" "CMakeFiles/pertemuan4.dir/Src/arithmetic_operation.cpp.o.d"
+  "/Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/arithmetic_operation_at.cpp" "CMakeFiles/pertemuan4.dir/Src/arithmetic_operation_at.cpp.o" "gcc" "CMakeFiles/pertemuan4.dir/Src/arithmetic_operation_at.cpp.o.d"
+  "/Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/arithmetic_operation_ptr.cpp" "CMakeFiles/pertemuan4.dir/Src/arithmetic_operation_ptr.cpp.o" "gcc" "CMakeFiles/pertemuan4.dir/Src/arithmetic_operation_ptr.cpp.o.d"
   "/Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/geometric_operation.cpp" "CMakeFiles/pertemuan4.dir/Src/geometric_operation.cpp.o" "gcc" "CMakeFiles/pertemuan4.dir/Src/geometric_operation.cpp.o.d"
   "/Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/logical_operation.cpp" "CMakeFiles/pertemuan4.dir/Src/logical_operation.cpp.o" "gcc" "CMakeFiles/pertemuan4.dir/Src/logical_operation.cpp.o.d"
   "/Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/main.cpp" "CMakeFiles/pertemuan4.dir/Src/main.cpp.o" "gcc" "CMakeFiles/pertemuan4.dir/Src/main.cpp.o.d"
-  "/Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/pixel_level_operation.cpp" "CMakeFiles/pertemuan4.dir/Src/pixel_level_operation.cpp.o" "gcc" "CMakeFiles/pertemuan4.dir/Src/pixel_level_operation.cpp.o.d"
+  "/Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/pixel_level_operation_at.cpp" "CMakeFiles/pertemuan4.dir/Src/pixel_level_operation_at.cpp.o" "gcc" "CMakeFiles/pertemuan4.dir/Src/pixel_level_operation_at.cpp.o.d"
+  "/Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/pixel_level_operation_ptr.cpp" "CMakeFiles/pertemuan4.dir/Src/pixel_level_operation_ptr.cpp.o" "gcc" "CMakeFiles/pertemuan4.dir/Src/pixel_level_operation_ptr.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

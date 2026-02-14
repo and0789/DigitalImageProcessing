@@ -1,6 +1,8 @@
 #include <iostream>
-#include "pixel_level_operation.h"
-#include "arithmetic_operation.h"
+#include "pixel_level_operation_at.h"
+#include "pixel_level_operation_ptr.h"
+#include "arithmetic_operation_at.h"
+#include "arithmetic_operation_ptr.h"
 #include "logical_operation.h"
 #include "geometric_operation.h"
 
@@ -16,86 +18,180 @@ int main()
     int N = image.cols;
     int threshold = 127;
 
+	int64 t0, t1;
+	double timeAt, timePtr;
+
 	// PIXEL LEVEL OPERATION
 
-    // Test RGB
-    cv::Mat imgBiner, imgNegatif, imgBright;
-    biner(image, imgBiner, threshold, M, N);
-    negative(image, imgNegatif, M, N);
-	brightening(image, 100, imgBright, M, N);
+	std::cout << "\n--- Benchmark Pixel Level ---" << std::endl;
 
-    // Test Grayscale
+    // Variabel Image Hasil
+    cv::Mat imgBinerAt, imgNegatifAt, imgBrightAt;
+    cv::Mat imgBinerPtr, imgNegatifPtr, imgBrightPtr;
+
+    // --- Benchmark Biner ---
+    t0 = cv::getTickCount();
+    PixelLevelAt::biner(image, imgBinerAt, threshold, M, N);
+    t1 = cv::getTickCount();
+    timeAt = (t1 - t0) / cv::getTickFrequency(); // Jangan pakai 'double' lagi
+    std::cout << "Time biner At  : " << timeAt << " s" << std::endl;
+
+    t0 = cv::getTickCount();
+    PixelLevelPtr::biner(image, imgBinerPtr, threshold, M, N);
+    t1 = cv::getTickCount();
+    timePtr = (t1 - t0) / cv::getTickFrequency(); // Gunakan timePtr
+    std::cout << "Time biner Ptr : " << timePtr << " s" << std::endl;
+
+    // --- Benchmark Negative ---
+    t0 = cv::getTickCount();
+    PixelLevelAt::negative(image, imgNegatifAt, M, N);
+    t1 = cv::getTickCount();
+    timeAt = (t1 - t0) / cv::getTickFrequency();
+    std::cout << "Time Negative At : " << timeAt << " s" << std::endl;
+
+    t0 = cv::getTickCount();
+    PixelLevelPtr::negative(image, imgNegatifPtr, M, N);
+    t1 = cv::getTickCount();
+    timePtr = (t1 - t0) / cv::getTickFrequency();
+    std::cout << "Time Negative Ptr: " << timePtr << " s" << std::endl;
+
+	// --- Benchmark Brightening ---
+	t0 = cv::getTickCount();
+	PixelLevelAt::brightening(image, 100, imgBrightPtr, M, N);
+	t1 = cv::getTickCount();
+	timeAt = (t1 - t0) / cv::getTickFrequency();
+	std::cout << "Time brightening At : " << timeAt << " s" << std::endl;
+
+	t0 = cv::getTickCount();
+	PixelLevelPtr::brightening(image, 100, imgBrightPtr, M, N);
+	t1 = cv::getTickCount();
+	timePtr = (t1 - t0) / cv::getTickFrequency();
+	std::cout << "Time brightening Ptr: " << timePtr << " s" << std::endl;
+
+    // --- Test Grayscale (Ptr) ---
     cv::Mat imgGray;
     cv::cvtColor(image, imgGray, cv::COLOR_BGR2GRAY);
     cv::Mat imgBinerGray, imgNegatifGray, imgBrightGray;
-    biner(imgGray, imgBinerGray, threshold, M, N);
-    negative(imgGray, imgNegatifGray, M, N);
-	brightening(imgGray, 100, imgBrightGray, M, N);
+    PixelLevelPtr::biner(imgGray, imgBinerGray, threshold, M, N);
+    PixelLevelPtr::negative(imgGray, imgNegatifGray, M, N);
+    PixelLevelPtr::brightening(imgGray, 100, imgBrightGray, M, N);
 
-    // Test HSV
+    // --- Test HSV (Ptr) ---
     cv::Mat imgHSV;
     cv::cvtColor(image, imgHSV, cv::COLOR_BGR2HSV);
     cv::Mat imgBinerHSV, imgNegatifHSV, imgBrightHSV;
-    biner(imgHSV, imgBinerHSV, threshold, M, N);
-    negative(imgHSV, imgNegatifHSV, M, N);
-	brightening(imgHSV, 100, imgBrightHSV, M, N);
+    PixelLevelPtr::biner(imgHSV, imgBinerHSV, threshold, M, N);
+    PixelLevelPtr::negative(imgHSV, imgNegatifHSV, M, N);
+    PixelLevelPtr::brightening(imgHSV, 100, imgBrightHSV, M, N);
 
-    // Display Pixel Level Operation
+    // Display Pixel Level Operation (Perbaikan Typo: Prt -> Ptr)
     cv::imshow("Original", image);
-    cv::imshow("Biner RGB", imgBiner);
-    cv::imshow("Negatif RGB", imgNegatif);
-	cv::imshow("Brightening RGB", imgBright);
+    cv::imshow("Biner RGB", imgBinerPtr);
+    cv::imshow("Negatif RGB", imgNegatifPtr);
+    cv::imshow("Brightening RGB", imgBrightPtr);
     cv::imshow("Biner Grayscale", imgBinerGray);
     cv::imshow("Negatif Grayscale", imgNegatifGray);
-	cv::imshow("Brightening Grayscale", imgBrightGray);
+    cv::imshow("Brightening Grayscale", imgBrightGray);
     cv::imshow("Biner HSV", imgBinerHSV);
     cv::imshow("Negatif HSV", imgNegatifHSV);
-	cv::imshow("Brightening HSV", imgBrightHSV);
+    cv::imshow("Brightening HSV", imgBrightHSV);
 
 	// Operasi Aritmetika
-	cv::Mat img1 = cv::imread("/Users/mc/CLionProjects/PengolahanCitraDigital/image1.jpg");
-	cv::Mat img2 = cv::imread("/Users/mc/CLionProjects/PengolahanCitraDigital/image2.jpg");
+	std::cout << "\n--- Menjalankan Operasi Aritmetika & Benchmark ---" << std::endl;
 
-	if (img1.empty() || img2.empty()) {
-		std::cerr << "[FATAL ERROR] Gagal memuat image1.jpg atau image2.jpg!" << std::endl;
-		std::cerr << "Cek path file kembali." << std::endl;
-		return -1;
-	}
+    cv::Mat img1 = cv::imread("/Users/mc/CLionProjects/PengolahanCitraDigital/image1.jpg");
+    cv::Mat img2 = cv::imread("/Users/mc/CLionProjects/PengolahanCitraDigital/image2.jpg");
 
-	if (img1.size() != img2.size()) {
-		std::cout << "[WARNING] Ukuran img1 dan img2 berbeda!" << std::endl;
-		std::cout << "Img1: " << img1.cols << "x" << img1.rows << std::endl;
-		std::cout << "Img2: " << img2.cols << "x" << img2.rows << std::endl;
-		std::cout << "Melakukan resize img2 agar sama dengan img1..." << std::endl;
+    if (img1.empty() || img2.empty()) {
+        std::cerr << "[FATAL ERROR] Gagal memuat image1.jpg atau image2.jpg!" << std::endl;
+        return -1;
+    }
 
-		// Solusi: Resize img2 agar sama persis dengan img1
-		cv::resize(img1, img1, img2.size());
-	}
+    // Samakan ukuran
+    if (img1.size() != img2.size()) {
+        std::cout << "[INFO] Resize img2 agar sama dengan img1..." << std::endl;
+        cv::resize(img2, img2, img1.size()); // Resize img2, simpan ke img2
+    }
 
-	cv::Mat resultAddition, resultSubtraction, resultMultiplication, resultDivision;
+    // Variabel untuk menampung hasil
+    cv::Mat resAddAt, resSubAt, resMulAt, resDivAt;
+    cv::Mat resAddPtr, resSubPtr, resMulPtr, resDivPtr;
 
-	addition(img1, img2, resultAddition, img1.rows, img1.cols);
-	subtraction(img1, img2, resultSubtraction, img1.rows, img1.cols);
-	multiplication(img1, img2, resultMultiplication, img1.rows, img1.cols);
-	division(img1, img2, resultDivision, img1.rows, img1.cols);
+    int rows = img1.rows;
+    int cols = img1.cols;
 
-	cv::imshow("Addition Result", resultAddition);
-	cv::imshow("Subtraction Result", resultSubtraction);
-	cv::imshow("Multiplication Result", resultMultiplication);
-	cv::imshow("Division Result", resultDivision);
+    // --- BENCHMARK ADDITION ---
+    std::cout << "\n[BENCHMARK] Addition:" << std::endl;
+
+    t0 = cv::getTickCount();
+    MethodAt::addition(img1, img2, resAddAt, rows, cols);
+    t1 = cv::getTickCount();
+    timeAt = (t1 - t0) / cv::getTickFrequency();
+    std::cout << "  Method .at()  : " << timeAt << " s" << std::endl;
+
+    t0 = cv::getTickCount();
+    MethodPtr::addition(img1, img2, resAddPtr, rows, cols);
+    t1 = cv::getTickCount();
+    timePtr = (t1 - t0) / cv::getTickFrequency();
+    std::cout << "  Method .ptr() : " << timePtr << " s" << std::endl;
+
+    if(timePtr > 0) std::cout << "  Speedup       : " << timeAt / timePtr << "x" << std::endl;
+
+    // --- BENCHMARK SUBTRACTION ---
+    std::cout << "[BENCHMARK] Subtraction:" << std::endl;
+
+    t0 = cv::getTickCount();
+    MethodAt::subtraction(img1, img2, resSubAt, rows, cols);
+    t1 = cv::getTickCount();
+    timeAt = (t1 - t0) / cv::getTickFrequency();
+    std::cout << "  Method .at()  : " << timeAt << " s" << std::endl;
+
+    t0 = cv::getTickCount();
+    MethodPtr::subtraction(img1, img2, resSubPtr, rows, cols);
+    t1 = cv::getTickCount();
+    timePtr = (t1 - t0) / cv::getTickFrequency();
+    std::cout << "  Method .ptr() : " << timePtr << " s" << std::endl;
+
+    // --- BENCHMARK MULTIPLICATION ---
+    std::cout << "[BENCHMARK] Multiplication:" << std::endl;
+
+    t0 = cv::getTickCount();
+    MethodAt::multiplication(img1, img2, resMulAt, rows, cols);
+    t1 = cv::getTickCount();
+    timeAt = (t1 - t0) / cv::getTickFrequency();
+    std::cout << "  Method .at()  : " << timeAt << " s" << std::endl;
+
+    t0 = cv::getTickCount();
+    MethodPtr::multiplication(img1, img2, resMulPtr, rows, cols);
+    t1 = cv::getTickCount();
+    timePtr = (t1 - t0) / cv::getTickFrequency();
+    std::cout << "  Method .ptr() : " << timePtr << " s" << std::endl;
+
+    // --- BENCHMARK DIVISION ---
+	t0 = cv::getTickCount();
+	MethodPtr::division(img1, img2, resMulPtr, rows, cols);
+	t1 = cv::getTickCount();
+	timePtr = (t1 - t0) / cv::getTickFrequency();
+    MethodPtr::division(img1, img2, resDivPtr, rows, cols);
+
+    // Display Hasil Aritmetika (Gunakan salah satu hasil, misal Ptr)
+    cv::imshow("Addition Result", resAddPtr);
+    cv::imshow("Subtraction Result", resSubPtr);
+    cv::imshow("Multiplication Result", resMulPtr);
+    cv::imshow("Division Result", resDivPtr);
 
 	// Operasi Aritmetika Scalar
-	cv::Mat resultScalarAddition, resultScalarSubtraction, resultScalarMultiplication, resultScalarDivision;
+	cv::Mat resScalAdd, resScalSub, resScalMul, resScalDiv;
 
-	scalar_addition(img1, 50, resultScalarAddition, img1.rows, img1.cols);
-	scalar_subtraction(img1, 50, resultScalarSubtraction, img1.rows, img1.cols);
-	scalar_multiplication(img1, 2, resultScalarMultiplication, img1.rows, img1.cols);
-	scalar_division(img1, 2, resultScalarDivision, img1.rows, img1.cols);
+	MethodPtr::scalar_addition(img1, 50, resScalAdd, rows, cols);
+	MethodPtr::scalar_subtraction(img1, 50, resScalSub, rows, cols);
+	MethodPtr::scalar_multiplication(img1, 2, resScalMul, rows, cols);
+	MethodPtr::scalar_division(img1, 2, resScalDiv, rows, cols);
 
-	cv::imshow("Scalar Addition Result", resultScalarAddition);
-	cv::imshow("Scalar Subtraction Result", resultScalarSubtraction);
-	cv::imshow("Scalar Multiplication Result", resultScalarMultiplication);
-	cv::imshow("Scalar Division Result", resultScalarDivision);
+	cv::imshow("Scalar Addition Result", resScalAdd);
+	cv::imshow("Scalar Subtraction Result", resScalSub);
+	cv::imshow("Scalar Multiplication Result", resScalMul);
+	cv::imshow("Scalar Division Result", resScalDiv);
 
 	// Operasi Logika
 	cv::Mat result_and, result_or, result_not, result_xor;

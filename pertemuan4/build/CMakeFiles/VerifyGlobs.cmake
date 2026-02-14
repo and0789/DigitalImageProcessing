@@ -4,11 +4,13 @@
 # SOURCES at CMakeLists.txt:17 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/*.cpp")
 set(OLD_GLOB
-  "/Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/arithmetic_operation.cpp"
+  "/Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/arithmetic_operation_at.cpp"
+  "/Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/arithmetic_operation_ptr.cpp"
   "/Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/geometric_operation.cpp"
   "/Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/logical_operation.cpp"
   "/Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/main.cpp"
-  "/Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/pixel_level_operation.cpp"
+  "/Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/pixel_level_operation_at.cpp"
+  "/Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/pixel_level_operation_ptr.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
