@@ -5324,11 +5324,9 @@ CMakeFiles/pertemuan4.dir/Src/main.cpp.o: /Users/mc/CLionProjects/PengolahanCitr
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
-  /Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Inc/arithmetic_operation_at.h \
   /Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Inc/arithmetic_operation_ptr.h \
   /Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Inc/geometric_operation.h \
   /Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Inc/logical_operation.h \
-  /Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Inc/pixel_level_operation_at.h \
   /Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Inc/pixel_level_operation_ptr.h \
   /opt/homebrew/Cellar/opencv/4.13.0_3/include/opencv4/opencv2/imgproc/segmentation.hpp \
   /opt/homebrew/Cellar/opencv/4.13.0_3/include/opencv4/opencv2/calib3d.hpp \
@@ -7616,9 +7614,9 @@ CMakeFiles/pertemuan4.dir/Src/pixel_level_operation_ptr.cpp.o: /Users/mc/CLionPr
   /opt/homebrew/Cellar/opencv/4.13.0_3/include/opencv4/opencv2/videoio.hpp
 
 
-/Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/pixel_level_operation_at.cpp:
-
 /Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Inc/pixel_level_operation_at.h:
+
+/Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/pixel_level_operation_at.cpp:
 
 /Users/mc/CLionProjects/PengolahanCitraDigital/pertemuan4/Src/main.cpp:
 
