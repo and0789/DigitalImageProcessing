@@ -228,21 +228,21 @@ int main(int argc, char* argv[]) {
     cv::Mat imageGray;
     cv::cvtColor(imageBGR, imageGray, cv::COLOR_BGR2GRAY);
 
-    // ── Eksperimen 1: Berbagai Kernel pada Grayscale ──────────────
+    // Eksperimen 1: Berbagai Kernel pada Grayscale
     cv::Mat hasilBlur    = konvolusiManual(imageGray,   Kernel::BLUR);
     cv::Mat hasilEdge    = konvolusiManual(imageGray,   Kernel::EDGE);
     cv::Mat hasilSharpen = konvolusiManual(imageGray,   Kernel::SHARPEN);
     cv::Mat hasilEmboss  = konvolusiManual(imageGray,   Kernel::EMBOSS);
 
-    // ── Eksperimen 2: Konvolusi Grayscale dengan & tanpa Padding ──
+    // Eksperimen 2: Konvolusi Grayscale dengan & tanpa Padding
     cv::Mat hasilTanpaPad = konvolusiManual(imageGray,       Kernel::BLUR);
     cv::Mat hasilDenganPad = konvolusiDenganPadding(imageGray, Kernel::BLUR);
 
-    // ── Eksperimen 3: Konvolusi pada Citra RGB ────────────────────
+    // Eksperimen 3: Konvolusi pada Citra RGB
     cv::Mat hasilRGBBlur  = konvolusiRGB(imageBGR, Kernel::BLUR);
     cv::Mat hasilRGBEdge  = konvolusiRGB(imageBGR, Kernel::EDGE);
 
-    // ── Bangun GUI ────────────────────────────────────────────────
+    // Bangun GUI
     QWidget* mainWindow = new QWidget();
     mainWindow->setWindowTitle("Implementasi Konvolusi Citra  -  Qt + OpenCV");
     mainWindow->setStyleSheet("background-color: #1a1a1f;");
